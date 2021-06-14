@@ -1,0 +1,8 @@
+from django.urls import path
+
+from .views import MenuListAPIView
+
+
+urlpatterns = [
+    path('', MenuListAPIView.as_view(), name ="menu_list") #name is optional, but better use it..
+]

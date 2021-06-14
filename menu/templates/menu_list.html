@@ -1,0 +1,12 @@
+<h1>Django Restaurent Menu</h1>
+
+<ul>
+  {% for menus in object_list %}
+  <li>
+    <h2>{{menus.name}}</h2>
+    <p>{{menus.desc}}</p>
+    <p>{{menus.price}}</p>
+  </li>
+  {% endfor %}
+
+</ul>  
