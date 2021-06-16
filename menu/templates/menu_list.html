@@ -3,10 +3,11 @@
 <ul>
   {% for menus in object_list %}
   <li>
+    <p>{{menus.img}}</p>
     <h2>{{menus.name}}</h2>
     <p>{{menus.desc}}</p>
     <p>{{menus.price}}</p>
   </li>
   {% endfor %}
 
-</ul>  
+</ul>

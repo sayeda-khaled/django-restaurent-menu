@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Menu(models.Model): # we are inheriting from the model we are inheriting the model from django..
+class Order(models.Model): # we are inheriting from the model we are inheriting the model from django..
     img = models.CharField(max_length=255, null=True)
     name = models.CharField(max_length=255)
     desc= models.CharField(max_length=255)

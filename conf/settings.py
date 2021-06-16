@@ -39,12 +39,14 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
 
-        # 3rd party
+    # 3rd party
     'rest_framework',
 
     #local
     'menu.apps.MenuConfig',
+    'orders.apps.OrdersConfig',
     'api.apps.ApiConfig',
+    'frontend.apps.FrontendConfig',
 
 ]
 
@@ -136,3 +138,11 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend/react-restaurant-app')
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'frontend/react-restaurant-app/build/static'),
+    os.path.join(BASE_DIR, 'frontend/react-restaurant-app/build/images'),
+)
