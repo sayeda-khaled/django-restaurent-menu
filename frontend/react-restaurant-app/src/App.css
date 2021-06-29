@@ -1,0 +1,42 @@
+.products img{
+  max-width: 250px;
+}
+
+.products div{
+  cursor: pointer;
+  border: 1px solid black;
+  display: inline-block;
+  background-color: cyan;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.main{
+  display: flex;
+  max-width: 1200px;
+  margin: auto; /*Marginn auto centers if a width is defined */
+}
+
+.productList {
+  padding: 30px;
+}
+
+.orderList{
+  padding: 30px;
+}
+
+
+.orders img{
+  max-width: 75px;
+}
+
+.orders div{
+  cursor: pointer;
+  border: 1px solid black;
+  display: inline-block;
+  background-color: #ffcccb;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
