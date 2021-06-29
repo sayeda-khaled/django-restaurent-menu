@@ -28,7 +28,7 @@ class ProductList extends Component {
         <p>{product.name}</p>
         <img src={product.img}></img>
         <p>{product.desc}</p>
-        <p>${product.price}</p>
+        <p>${product.price/100}</p>
         <input type="checkbox" onChange={() => this.props.toggleSelection(product.id)}/>
         <div  onClick= {() => this.handleClick(product)}>Add To Order</div>
     </div>
